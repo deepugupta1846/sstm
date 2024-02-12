@@ -9,6 +9,12 @@ import {
   FormControlLabel,
   Grid,
   Select,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
   TextField,
   Typography,
 } from "@material-ui/core";
@@ -57,6 +63,7 @@ function Signup(props) {
     assignedRoleTag: "",
     assignedCategoryTags: "",
     id: uuidv4(),
+    createdAt: new Date(),
   });
 
   const [countryData, setCountryData] = useState(Country.getAllCountries());
@@ -157,6 +164,87 @@ function Signup(props) {
           <Grid item xs={10} md={10} lg={10} className={classes.formContainer}>
             <form onSubmit={handleSubmit}>
               <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <TableContainer>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                      <TableHead>
+                        <TableRow>
+                          {/* <TableCell>Dessert (100g serving)</TableCell> */}
+                          <TableCell align="left">Title</TableCell>
+                          <TableCell align="left">First Name</TableCell>
+                          <TableCell align="left">Last Name</TableCell>
+                          <TableCell align="left">Designation</TableCell>
+                          <TableCell align="left">Mobile</TableCell>
+                          <TableCell align="left">Email</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Title" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="First Name" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Last Name" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Designation" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Mobile" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Email" type="text" />
+                          </TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Title" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="First Name" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Last Name" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Designation" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Mobile" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Email" type="text" />
+                          </TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Title" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="First Name" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Last Name" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Designation" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Mobile" type="text" />
+                          </TableCell>
+                          <TableCell component="th" scope="row">
+                            <TextField label="Email" type="text" />
+                          </TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Grid>
+              </Grid>
+              <Grid container spacing={2} style={{ marginTop: "100px" }}>
                 <Grid item xs={12} md={4}>
                   <Grid container spacing={2}>
                     <Grid item xs={6}>

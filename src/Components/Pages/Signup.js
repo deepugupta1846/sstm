@@ -74,11 +74,11 @@ function Signup(props) {
   return (
     <div className={classes.container} style={{ padding: 0 }}>
       <Grid container justifyContent="center" alignItems="center">
-        <Grid item xs={10} md={6} lg={4} className={classes.formContainer}>
+        <Grid item xs={10} md={4} lg={4} className={classes.formContainer}>
           <div>
             <div>
               <Typography variant="h4" align="center" className={classes.title}>
-                Register
+                SSTextile
               </Typography>
             </div>
             <form onSubmit={handleSend}>

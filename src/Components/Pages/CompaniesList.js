@@ -90,12 +90,12 @@ const columns = [
     minWidth: 100,
     align: "right",
   },
-  {
-    id: "update",
-    label: "Created",
-    minWidth: 100,
-    align: "right",
-  },
+  // {
+  //   id: "update",
+  //   label: "update",
+  //   minWidth: 100,
+  //   align: "right",
+  // },
   {
     id: "sour",
     label: "Source",
@@ -278,7 +278,7 @@ function CompaniesList(props) {
                             {row.address}
                           </TableCell>
                           <TableCell key={row.key} align="right">
-                            {row.city}
+                            {row.City}
                           </TableCell>
                           {/* <TableCell key={row.key} align="right">
                           {row.pincode}
@@ -299,11 +299,11 @@ function CompaniesList(props) {
                             {row.website}
                           </TableCell>
                           <TableCell key={row.key} align="right">
-                            {row.created}
+                            {row.created || "null"}
                           </TableCell>
-                          <TableCell key={row.key} align="right">
+                          {/* <TableCell key={row.key} align="right">
                             {row.update}
-                          </TableCell>
+                          </TableCell> */}
                           <TableCell key={row.key} align="right">
                             {row.sour}
                           </TableCell>

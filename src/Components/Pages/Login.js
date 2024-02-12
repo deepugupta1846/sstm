@@ -68,11 +68,11 @@ function Login(props) {
   return (
     <div className={classes.container} style={{ padding: 0 }}>
       <Grid container justifyContent="center" alignItems="center">
-        <Grid item xs={10} md={6} lg={4} className={classes.formContainer}>
+        <Grid item xs={10} md={4} className={classes.formContainer}>
           <form onSubmit={handleSubmit}>
             <div>
               <Typography variant="h4" align="center" className={classes.title}>
-                Login
+                SSTextile
               </Typography>
             </div>
 
